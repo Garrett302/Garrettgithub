@@ -2,24 +2,22 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f4f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
 .header {
-  background-color: #4a90e2;
+  background-color: #007bff;
   color: white;
   padding: 20px;
   text-align: center;
+  border-radius: 8px;
 }
 
 .header h1 {
@@ -29,15 +27,25 @@ body {
 .nav {
   display: flex;
   justify-content: space-around;
-  background-color: #fff;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav a {
-  color: #4a90e2;
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #007bff;
+  color: white;
 }
 
 .profile {
@@ -52,8 +60,8 @@ body {
 
 .profile img {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   margin-right: 20px;
 }
 
@@ -75,6 +83,7 @@ body {
 
 .post h3 {
   margin-top: 0;
+  color: #007bff;
 }
 
 .post p {

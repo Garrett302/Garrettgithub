@@ -2,40 +2,59 @@
 import React from 'react';
 import './App.css';
 
+const user = {
+  name: "John Doe",
+  username: "@johndoe",
+  profilePicture: "https://via.placeholder.com/100"
+};
+
+const posts = [
+  {
+    id: 1,
+    title: "First Post",
+    content: "This is the content of the first post. It's just some placeholder text for now.",
+  },
+  {
+    id: 2,
+    title: "Second Post",
+    content: "This is the content of the second post. It's just some placeholder text for now.",
+  },
+  {
+    id: 3,
+    title: "Third Post",
+    content: "This is the content of the third post. It's just some placeholder text for now.",
+  }
+];
+
 function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Universal Saladtossers Collective</h1>
+        <h1>My Social Media</h1>
       </header>
       <nav className="nav">
         <a href="#home">Home</a>
         <a href="#profile">Profile</a>
         <a href="#messages">Messages</a>
         <a href="#settings">Settings</a>
-        <a href="#signin.js">Sign In</a>
       </nav>
       <div className="profile">
-        <img src="https://i.redd.it/m2g2a7xyvh9d1.png" alt="Profile" />
+        <img src={user.profilePicture} alt="Profile" />
         <div className="profile-info">
-          <h2>Bryan Griffin</h2>
-          <p>@Cptstabbin420</p>
+          <h2>{user.name}</h2>
+          <p>{user.username}</p>
         </div>
       </div>
       <div className="feed">
-        <div className="post">
-          <h3>@Cptstabbin</h3>
-          <p>In need of a good rimming 🤪 </p>
-        </div>
-        <div className="post">
-          <h3>@Archibald_meatpants</h3>
-          <p>😏</p>
-        </div>
+        {posts.map(post => (
+          <div className="post" key={post.id}>
+            <h3>{post.title}</h3>
+            <p>{post.content}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
 }
 
 export default App;
-
-
