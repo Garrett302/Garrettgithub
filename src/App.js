@@ -1,5 +1,7 @@
+// src/App.js
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Register from './components/Register';
 import { Tab1, Tab2, Tab3, Tab4, Tab5 } from './components/Tab1';
@@ -10,15 +12,15 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
-        <Switch>
-          <Route path="/" exact component={Tab1} />
-          <Route path="/tab1" component={Tab1} />
-          <Route path="/tab2" component={Tab2} />
-          <Route path="/tab3" component={Tab3} />
-          <Route path="/tab4" component={Tab4} />
-          <Route path="/tab5" component={Tab5} />
-          <Route path="/register" component={Register} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Tab1 />} />
+          <Route path="/tab1" element={<Tab1 />} />
+          <Route path="/tab2" element={<Tab2 />} />
+          <Route path="/tab3" element={<Tab3 />} />
+          <Route path="/tab4" element={<Tab4 />} />
+          <Route path="/tab5" element={<Tab5 />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
       </div>
     </Router>
   );

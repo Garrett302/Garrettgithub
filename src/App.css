@@ -2,7 +2,7 @@ body, html, #root, .App {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('/images/background.jpg'); /* Replace with your actual image path */
+    background-image: url('~/Users/garrett/24hr-GrandTetons.heic'); /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
   }
