@@ -1,15 +1,21 @@
 body, html, #root, .App {
-    height: 100%;
+
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('https://preview.redd.it/t8vrna2de2ad1.jpeg?width=1080&crop=smart&auto=webp&s=e9925aef59e892a93a4ec1dad17a4af251880de6'); /* Replace with your actual image path */
-    background-size: cover;
-    background-position: center;
+    background-image: url("https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?cs=srgb&dl=pexels-matthardy-1533720.jpg&fm=jpg");
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-size: cover;        /* Scales the image to cover the entire area */
+    background-position: center;   /* Centers the image */
+    background-attachment: fixed;  /* Fixes the image in place during scrolling */
+    height: 100vh;                 /* Sets the height of the body to 100% of the viewport height */
+    margin: 0;                     
   }
+
+  
   
   .navbar {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
+    background: rgba(255, 0, 0, 0);
+    padding: 15px;
     display: flex;
     justify-content: center;
   }
@@ -26,24 +32,26 @@ body, html, #root, .App {
   }
   
   .nav-links a {
-    color: white;
+    color: rgba(255, 255, 255, 0.856);
     text-decoration: none;
     padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(31, 27, 31, 0.131);
     border-radius: 4px;
     transition: background 0.3s ease;
   }
   
   .nav-links a:hover {
-    background: rgba(173, 10, 108, 0.3);
+    background: rgba(0, 0, 0, 0.527);
   }
   
   .form-container {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    background: rgba(78, 78, 78, 0.568);
+    padding: 40px;
     border-radius: 8px;
     max-width: 400px;
     margin: 50px auto;
+
+    
   }
   
   .form-group {
@@ -63,15 +71,15 @@ body, html, #root, .App {
   
   .submit-button {
     padding: 10px 20px;
-    background: #007bff;
+    background: rgba(27, 28, 30, 0.365);
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.723);
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s ease;
   }
   
   .submit-button:hover {
-    background: #0056b3;
+    background: rgba(0, 0, 0, 0.52);
   }
   

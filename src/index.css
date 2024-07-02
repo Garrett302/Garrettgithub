@@ -16,15 +16,18 @@ html, body, #root {
 /* Temporary external image for testing */
 body {
   /* background-image: url('/images/background.jpg'); /* Uncomment this line for the local image */
-  background-image: url('https://preview.redd.it/t8vrna2de2ad1.jpeg?width=1080&crop=smart&auto=webp&s=e9925aef59e892a93a4ec1dad17a4af251880de6'); /* External image for testing */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?cs=srgb&dl=pexels-matthardy-1533720.jpg&fm=jpg");
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-size: cover;        /* Scales the image to cover the entire area */
+  background-position: center;   /* Centers the image */
+  background-attachment: fixed;  /* Fixes the image in place during scrolling */
+  height: 100vh;                 /* Sets the height of the body to 100% of the viewport height */
+  margin: 0;                     
+  color: #ffffffeb;
   align-items: center;
-  color: #333;
 }
+
+
 
 a {
   color: inherit;
@@ -41,6 +44,7 @@ a:hover {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+  align-items: center;
 }
 
 /* Additional global styles */
@@ -57,8 +61,8 @@ p {
 /* Button styles */
 button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #f179e7;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -72,8 +76,8 @@ button:hover {
 /* Navbar styles */
 .navbar {
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 10px;
+  background: rgba(90, 0, 84, 0.448);
+  padding: 0px;
 }
 
 .nav-links {
