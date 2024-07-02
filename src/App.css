@@ -2,7 +2,7 @@ body, html, #root, .App {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('~/Users/garrett/24hr-GrandTetons.heic'); /* Replace with your actual image path */
+    background-image: url('https://preview.redd.it/t8vrna2de2ad1.jpeg?width=1080&crop=smart&auto=webp&s=e9925aef59e892a93a4ec1dad17a4af251880de6'); /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
   }
@@ -35,7 +35,7 @@ body, html, #root, .App {
   }
   
   .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(173, 10, 108, 0.3);
   }
   
   .form-container {

@@ -13,8 +13,10 @@ html, body, #root {
 }
 
 /* Set a default background image and other global styles */
+/* Temporary external image for testing */
 body {
-  background-image: url('/images/background.jpg'); /* Update the path to your actual image */
+  /* background-image: url('/images/background.jpg'); /* Uncomment this line for the local image */
+  background-image: url('https://preview.redd.it/t8vrna2de2ad1.jpeg?width=1080&crop=smart&auto=webp&s=e9925aef59e892a93a4ec1dad17a4af251880de6'); /* External image for testing */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
