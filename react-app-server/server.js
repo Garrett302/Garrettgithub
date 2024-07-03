@@ -5,7 +5,7 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 
 const app = express();
-const port = process.env.PORT || 5001; // Changed port to 5001
+const port = process.env.PORT || 5001; // Use a different port than your React development server
 
 // Use Helmet to help secure Express apps with various HTTP headers
 app.use(helmet());
@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 // API endpoint for registration
 app.post('/api/register', (req, res) => {
   const { username, password } = req.body;
-  
+
   // Validate input
   if (!username || !password) {
     return res.status(400).json({ message: 'Username and password are required' });
