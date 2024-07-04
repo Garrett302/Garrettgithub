@@ -11,7 +11,8 @@
     "path": "^0.12.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "react-router-dom": "^5.3.0"  // Add this line
   },
   "browserslist": [
     ">0.2%",
@@ -19,4 +20,5 @@
     "not op_mini all"
   ]
 }
+
 
