@@ -1,16 +1,17 @@
 {
   "name": "react-app-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "build": "react-scripts build"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scripts": "latest"
   }
 }
+
