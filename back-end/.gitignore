@@ -24,3 +24,6 @@ yarn-error.log*
 
 /src/background.jpg
 background-image:*
+.packcage-lock.json
+node_modules
+package.json
